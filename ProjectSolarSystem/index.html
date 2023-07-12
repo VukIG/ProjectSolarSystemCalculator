@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <video muted loop autoplay  type="video/mp4" src="earth.mp4">
+    </video>
+    <div id="app">
+      <div class="items">
+        <h1> Calculate the weight of an object on a different planet</h1>
+        <div class="inputs">
+          <input type="text" placeholder="Enter the objects mass" id="mass">
+          <select id="planet">
+            <option value="0">Select Planet:</option>
+            <option value="9.8">Earth</option>
+            <option value="3.71">Mars</option>
+            <option value="8.87">Venus</option>
+            <option value="24.79">Jupiter</option>
+            <option value="10.44">Saturn</option>
+            <option value="3.7">Mercury</option>
+            <option value="0.62">Pluto</option>
+            <option value="11.15">Neptune</option>
+            <option value="8.87">Venus</option>
+          </select>
+          <input type="button" class="button" value="Calculate weight">
+        </div>
+        <div class="output">
+          <img src="" alt="">
+          <div class="result">
+            <h1>Type in the mass and select a planet in order to see the weight of that object on that planet</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
